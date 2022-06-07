@@ -113,8 +113,6 @@ def main_hm(date=None):
     
     run_model(df_val_processed, categorical, dv, lr)
 
-main_hm(date="2021-08-15")
-
 from prefect.deployments import DeploymentSpec
 from prefect.orion.schemas.schedules import CronSchedule
 from prefect.flow_runners import SubprocessFlowRunner
